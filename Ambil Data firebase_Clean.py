@@ -3,9 +3,9 @@ import time
 print ("Hello World")
 
 config = {
-  "apiKey": "AIzaSyBsrnOhng4Zp3dYcraVtx_eM8vKN9lIhDs",
-  "authDomain": "test-nodemcu-5ea41.firebaseapp.com",
-  "databaseURL": "https://test-nodemcu-5ea41.firebaseio.com",
+  "apiKey": "",
+  "authDomain": "t.com",
+  "databaseURL": "",
   "projectId": "test-nodemcu-5ea41",
   "storageBucket": ""
 }
@@ -14,7 +14,7 @@ firebase = pyrebase.initialize_app(config)
 
 auth = firebase.auth() 
 #authenticate a user
-user = auth.sign_in_with_email_and_password("budi.aulian.h@gmail.com", "Gjwzjbsajkrf1234")
+user = auth.sign_in_with_email_and_password("bm", "")
 
 db = firebase.database()
 user = auth.refresh(user['refreshToken'])
