@@ -1,6 +1,6 @@
 import pyrebase
 import time
-print ("Hello World")
+
 
 config = {
   "apiKey": "",
