@@ -25,4 +25,8 @@ user['idToken']
 while True:
     jarak = users = db.child("ULTRASONIC").get()
     print (jarak.val())
+    if (jarak.val() < 5):
+      print ("Whoa There, That's too close")
+    elif (jarak.val() > 200):
+      print ("Welp, that's too far mate")
     time.sleep(0.1)
